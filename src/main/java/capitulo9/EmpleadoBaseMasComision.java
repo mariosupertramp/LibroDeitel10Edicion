@@ -3,7 +3,7 @@ package capitulo9;
 public class EmpleadoBaseMasComision extends EmpleadoPorComision{
 
     private double salarioBase;
-
+ // marioootee
     public EmpleadoBaseMasComision(String primerNombre, String apellidoPaterno, String numeroSeguroSocial, double ventasBrutas, double tarifaComision, double salarioBase) {
 
         // Llamada explícita al constructor de la superclase EmpleadoPorComision

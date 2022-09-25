@@ -3,7 +3,7 @@ package capitulo9;
 // prueba de que se procesan objetos de Factura y Empleado mediante polimorfismo
 public class PruebaInterfazPorPagar {
 
-
+// marioooooooooo
     public static void main(String[] args) {
 
         PorPagar[] objetosPorPagar = new PorPagar[4];

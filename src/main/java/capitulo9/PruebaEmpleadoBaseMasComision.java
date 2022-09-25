@@ -5,7 +5,7 @@ public class PruebaEmpleadoBaseMasComision {
 
     public static void main(String[] args) {
 
-
+// marioooon
         EmpleadoBaseMasComision empleado = new EmpleadoBaseMasComision("Bob", "Lewis", "333-333-33333", 5000, .04, 300);
 
         System.out.println("El primer nombre es:" + empleado.getPrimerNombre());
