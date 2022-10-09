@@ -1,3 +1,5 @@
+package capitulo8;
+
 public class Tiempo1 {
 
     private int hora;

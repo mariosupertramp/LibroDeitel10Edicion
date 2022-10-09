@@ -1,22 +1,32 @@
+package capitulo8;
+
+// Ejemplifica el manejo de Constructores sobrecargados
+
 public class Tiempo2 {
 
     private int hora;
     private int minuto;
     private int segundo;
 
+
     // Constructor sin argumentos
     public Tiempo2(){
+
         this(0,0,0); // Mando a traer el constructor de 3 argumentos
      }
 
+
     //Constructor se suministra solo 1 argumento de hora
     public Tiempo2(int hora){
-         this(hora, 0, 0);
+
+        this(hora, 0, 0); // Mando a traer el constructor de 3 argumentos
         }
+
 
     //Constructor se suministra solo 2 argumentos de hora y minuto
     public Tiempo2(int hora, int minuto){
-        this(hora, minuto,0);
+
+        this(hora, minuto,0); // Mando a traer el constructor de 3 argumentos
     }
 
 
@@ -44,11 +54,8 @@ public class Tiempo2 {
 
      //Constructor de tiempo2 que recibe otro objeto tiempo2
     public Tiempo2(Tiempo2 tiempo){
-
-        this( tiempo.getHora(), tiempo.getMinuto(), tiempo.getSegundo() ); // invoco l constructor de 3 elementos
-
+        this( tiempo.getHora(), tiempo.getMinuto(), tiempo.getSegundo() ); // Mando a traer el constructor de 3 argumentos
     }
-
 
 
      public void establecerTiempo(int hora, int minuto, int segundo){
@@ -93,8 +100,7 @@ public class Tiempo2 {
     }
 
 
-
-     // metodos get
+     // Métodos get  ---------------------
 
     public int getHora() {
         return hora;
@@ -107,12 +113,16 @@ public class Tiempo2 {
     public int getSegundo() {
         return segundo;
     }
+// ---------------------------------------
+
 
     // convierte a String en formato de hora universal (HH:MM:SS)
     public String aStringUniversal()
     {
+
         return String.format("%02d:%02d:%02d", getHora(), getMinuto(), getSegundo());
     }
+
 
     // convierte a String en formato de hora estándar (H:MM:SS AM o PM)
     public String toString()
@@ -120,8 +130,6 @@ public class Tiempo2 {
         return String.format("%d:%02d:%02d %s",
         ((getHora() == 0 || getHora() == 12) ? 12 : getHora() % 12), getMinuto(), getSegundo(), (getHora() < 12 ? "AM" : "PM"));
     }
-
-
 
 
 }

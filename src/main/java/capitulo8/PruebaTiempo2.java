@@ -1,3 +1,5 @@
+package capitulo8;
+
 public class PruebaTiempo2 {
 
     public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class PruebaTiempo2 {
         mostrarTiempo("t2: se especifico hora; minuto y segundo predeterminados",t2);
         mostrarTiempo("t3: se especificaron hora y minuto; segundo predeterminado", t3);
         mostrarTiempo("t4: se especificaron hora, minuto y segundo", t4);
-        mostrarTiempo("t5: se especifico el objeto Tiempo2 llamado t4", t5);
+        mostrarTiempo("t5: se especifico el objeto capitulo8.Tiempo2 llamado t4", t5);
 
 
       try
